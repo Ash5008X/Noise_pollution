@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOME</title>
+<!-- Link to Poppins font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href= CSS\headernavnewsletter.css>
+
+  <script src=Javascripts/newsletter.js></script>
+  <script src=Javascripts\registerbutton.js></script>
+
+  <link rel="stylesheet" href="CSS\about.css">
+</head>
+<body>
+  <header>
+    <!-- Left side: Logo -->
+    <div class="logo">
+        <!-- Replace 'logo.png' with your actual logo image -->
+        <img src=PHOTOS\logo.png alt="Logo">
+    </div>
+
+    <!-- Center: Website Name -->
+    <div class="website-name">
+      NOISE POLLUTION MONITORING AND MITIGATION
+    </div>
+
+    <!-- Right side: Register Button -->
+    <button class="register-button" onclick="showDialog()">Get in touch</button>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="product.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About Us</a>
+</nav>
+
+
+  <div class="container">
+
+    <h1 class="heading">About us</h1>
+    <p class="aboutclass">Welcome to our Noise Pollution Monitoring and Mitigation website, where we are dedicated to providing comprehensive solutions for combating noise pollution. At our core, we specialize in offering advanced monitoring tools to track noise levels effectively. Additionally, we strive to empower individuals and communities with knowledge on how to mitigate and prevent noise pollution through our range of services and products. Whether you're looking to understand the impacts of noise pollution, seeking guidance on implementing effective measures to reduce it, or exploring innovative products designed to control noise pollution, you'll find everything you need right here. Our platform serves as a hub for all information related to noise pollution and its mitigation strategies. Together, let's work towards creating quieter and more peaceful environments for everyone.</p>
+    <br>
+    <div class="box-container">
+
+        <div class="box">
+          <img src="PHOTOS\vision.png" alt="">
+          <h3>VISION</h3>
+            <p>We're dedicated to leading the way in noise pollution monitoring and mitigation. Our goal is simple: provide accessible tools and insights to understand and address noise pollution effectively. Through technology and data-driven solutions, we're working towards quieter, healthier living environments for all.</p>
+        </div>
+
+        <div class="box">
+            <img src="PHOTOS\mission.png" alt="">
+            <h3>MISSION</h3>
+            <p>our mission is to empower communities globally against noise pollution. Through accessible tools and resources, we drive awareness and facilitate positive change for quieter, sustainable living environments.</p>
+        </div>
+    </div>
+
+</div>
+
+
+  <section class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Stay updated with our latest news and promotions.</p>
+    <form id="newsletterForm" onsubmit="submitForm(event)">
+      <input type="email" id="emailInput" placeholder="Enter your email address" required>
+      <button type="submit" id="submitButton">Subscribe</button>
+      <button type="button" id="submittedButton" class="hide">Submitted</button>
+      <button type="button" id="homeButton" class="hide" onclick="window.location.href='index.html'">Home</button>
+    </form>
+    <!-- Copyright Text -->
+    <p class="copyright">Noise Pollution Monitoring and Mitigation | &copy;2024</p>
+  </section>
+</body>
+</html>

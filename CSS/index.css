@@ -1,0 +1,313 @@
+/* Carousel CSS */
+
+
+
+/* Services CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+.services-container{
+    background:linear-gradient(white);
+    padding:15px 9%;
+    padding-bottom: 100px;
+}
+
+.services-container{
+    text-align: center;
+    padding-bottom: 15px;
+    color:rgb(231, 231, 180);
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+.services-heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#563727;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+}
+
+.services-container .services-box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.services-container .services-box-container .services-box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: #563727;
+    text-align: center;
+    padding:30px 20px;
+}
+
+.services-container .services-box-container .services-box img{
+    height: 80px;
+}
+
+.services-container .services-box-container .services-box .services-h3{
+    color:rgb(255, 255, 255);
+    font-size: 22px;
+    padding:10px 0;
+}
+
+.services-container .services-box-container .services-box .services-p{
+    color:rgb(231, 231, 180);
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.services-container .services-box-container .services-box .services-btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#563727;
+    color:rgb(255, 255, 255);
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.services-container .services-box-container .services-box .services-btn:hover{
+    letter-spacing: 1px;
+}
+
+.services-container .services-box-container .services-box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    .container{
+        padding:20px;
+    }
+}
+
+
+
+
+/* Products CSS */
+
+
+
+
+
+
+/* About CSS */
+
+.about-p{
+    font-size: 20px;
+    color:#563727;
+    font-family: 'Poppins',sans-serif;
+    bottom:0%;
+}
+.about-a{
+    top:0%;
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+
+
+/* Our team CSS */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color:#563727;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+    bottom:auto;
+}
+.home-container{
+    top:auto;
+    bottom:auto;
+    left:auto;
+    right:auto;
+    margin:auto;
+    width: auto;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-card{
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background-color: #563727;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: -5px 8px 45px rgba(51, 51, 51, 0.126);
+    transition: all .4s;
+    margin: 0 20px;
+}
+.profile-card:hover{
+    border-radius: 10px;
+    height: 260px;
+}
+.profile-card .img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.profile-card:hover img{
+    border-radius: 10px;
+    transform: translateY(-70px);
+}
+.img img{
+    object-fit: fill;
+    width: 100%;
+    border-radius: 50%;
+    transition: all .4s;
+    z-index: 99;
+}
+.caption{
+    text-align: center;
+    transform: translateY(-90px);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s;
+}
+.profile-card:hover .caption{
+    opacity: 1;
+    pointer-events: all;
+}
+.caption h3{
+    font-size: 21px;
+    color: rgb(231, 231, 180);
+    font-weight: 600;
+}
+.caption p{
+    color:#ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 2px 0 12px 0;
+}
+.caption{
+    font-size: 21px;
+    margin: 0 3px;
+    cursor: pointer;
+    color: rgb(231, 231, 180);
+    transition: all .4s;
+}
+.caption{
+    color: rgb(231, 231, 180);
+}
+
+
+
+/* Contact CSS */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+h1{font-family: 'Poppins',sans-serif;
+    text-align: center;
+    color:#563727;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 40px;}
+
+.contact-form {
+    background-color: #563727;
+    top:auto;
+    bottom:auto;
+    left:auto;
+    right:auto;
+    margin:auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    max-width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for smooth movement and box-shadow */
+  }
+  
+  .contact-form:hover {
+    transform: translateY(-5px); /* Move the form 5px upwards on hover */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Add a stronger box-shadow on hover */
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    color:rgb(231, 231, 180);
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: calc(100% - 22px); /* Adjusted width to consider padding and border */
+    padding: 10px;
+    border: 1px solid rgb(231, 231, 180);
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .submit-btn {
+    background-color: rgb(231, 231, 180);
+    color: #563727;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: rgb(231, 231, 180);
+  }
+  
+
+
+
+
+
+/* view more CSS */
+
+
+.knowmore-button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #563727;
+    color: rgb(231, 231, 180);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for register button */
+.knowmore-button:hover {
+    background-color: rgb(231, 231, 180);
+    color: #000000;
+}

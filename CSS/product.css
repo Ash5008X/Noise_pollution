@@ -1,0 +1,50 @@
+body {
+    background-color: #563727;
+    color:white;
+}
+.container {
+    width: 80%;
+    padding: 5%;
+    background-color: rgb(231, 231, 180);
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+.product {
+    display: inline-block;
+    margin: 20px;
+    width: 300px;
+    background-color: #563727;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 20px;
+    vertical-align: top;
+    padding: 20px;
+    background-clip: padding-box;
+    background-origin: padding-box;
+}
+.product h1, .product p {
+    margin: 0;
+    padding: 0;
+}
+.buy-button {
+    background-color: rgb(231, 231, 180);
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.head{
+    font-size: 30px;
+}
+
+.bat{
+    font-size:15px;
+}

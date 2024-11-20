@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOME</title>
+<!-- Link to Poppins font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href= CSS\headernavnewsletter.css>
+
+  <script src=Javascripts\newsletter.js></script>
+  <script src=Javascripts\registerbutton.js></script>
+
+  <link rel="stylesheet" href="CSS\services.css">
+</head>
+<body>
+  <header>
+    <!-- Left side: Logo -->
+    <div class="logo">
+        <!-- Replace 'logo.png' with your actual logo image -->
+        <img src=PHOTOS\logo.png alt="Logo">
+    </div>
+
+    <!-- Center: Website Name -->
+    <div class="website-name">
+      NOISE POLLUTION MONITORING AND MITIGATION
+    </div>
+
+    <!-- Right side: Register Button -->
+    <button class="register-button" onclick="showDialog()">Get in touch</button>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="product.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About Us</a>
+</nav>
+
+ 
+  <div class="container">
+
+    <h1 class="heading">our services</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="PHOTOS\pointingbelo.png" alt="noise quality">
+            <h3>Check noise quality</h3>
+            <p>Check Now that how is your area's noise quality</p>
+            <a href="meter.html" class="btn">Click here to check</a>
+        </div>
+
+        <div class="box">
+            <img src="PHOTOS\ears.png" alt="">
+            <h3>Check your ears age</h3>
+            <p>Check now what's age </p>
+            <p>of your ears</p>
+            <a href="earsage.html" class="btn">Click here to check</a>
+        </div>
+
+        <div class="box">
+            <img src="PHOTOS\smiley3.png" alt="">
+            <h3>File a complaint</h3>
+            <p>File a complaint if you are having issues in your area related to noise pollution</p>
+            <p><a href="https://ppcb.punjab.gov.in/en/toll-free-no-1800-1203-667-and-whatsapp-no-9914498899-for-public-grievances-0#:~:text=1800%2D1203%2D667%20and%20Whatsapp,Control%20Board%2C%20Government%20of%20Punjab" style="color:white">Click here to file complaint to Punjab police complaint board</a></p>
+        </div>
+    </div>
+
+</div>
+
+
+<section class="newsletter">
+  <h2>Subscribe to Our Newsletter</h2>
+  <p>Stay updated with our latest news and promotions.</p>
+  <form id="newsletterForm" onsubmit="submitForm(event)">
+    <input type="email" id="emailInput" placeholder="Enter your email address" required>
+    <button type="submit" id="submitButton">Subscribe</button>
+    <button type="button" id="submittedButton" class="hide">Submitted</button>
+    <button type="button" id="homeButton" class="hide" onclick="window.location.href='index.html'">Home</button>
+  </form>
+  <!-- Copyright Text -->
+  <p class="copyright">Noise Pollution Monitoring and Mitigation | &copy;2024</p>
+</section>
+</body>
+</html>

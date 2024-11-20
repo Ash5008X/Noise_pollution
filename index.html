@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOME</title>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href= CSS\headernavnewsletter.css>
+
+  <script src=Javascripts\newsletter.js></script>
+  <script src=Javascripts\registerbutton.js></script>
+
+  <link rel="stylesheet" href="CSS\index.css">
+</head>
+<body>
+  <header>
+    
+    <div class="logo">
+        
+        <img src=PHOTOS\logo.png alt="Logo">
+    </div>
+
+    
+    <div class="website-name">
+      NOISE POLLUTION MONITORING AND MITIGATION
+    </div>
+
+    
+    <button class="register-button" onclick="showDialog()">Get in touch</button>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="product.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About Us</a>
+        
+    </div>
+</nav><br><br>
+<!-- Index section starts from here-->
+<!-- Carousel/slideshow/fade section starts from here-->
+
+
+
+
+<!-- Blog section starts from here-->
+
+
+
+
+
+
+
+
+<!-- Our Services section starts from here-->
+
+<div class="services-container">
+
+  <h1 class="services-heading">our services</h1>
+
+  <div class="services-box-container">
+
+      <div class="services-box">
+          <img src="PHOTOS\buffer.png" alt="noise quality">
+          <h3 class="services-h3">Check noise quality</h3>
+          <p class="services-p">Check Now that how is your area's noise quality</p>
+          <a href="meter.html" class="services-btn">Click here to check</a>
+      </div>
+
+      <div class="services-box">
+          <img src="PHOTOS\ears.png" alt="">
+          <h3 class="services-h3">Check your ears age</h3>
+          <p class="services-p">Check now what's age </p>
+          <p class="services-p">of your ears</p>
+          <a href="earsage.html" class="services-btn">Click here to check</a>
+      </div>
+  </div>
+
+</div>
+<br>
+<a class="knowmore-button" href="services.html">Click here to view all services</a>
+<br><br>
+
+
+<!-- Our Contact section starts from here-->
+
+
+
+
+<h1>CONTACT US</h1>
+<div class="contact-form">
+  <form id="contact-form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</div>
+<br><br><br><br>
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    var mailtoLink = 'mailto:workforsnehil@email.com?subject=Contact%20Us&body=Name:%20' + name + '%0AEmail:%20' + email + '%0AMessage:%20' + message;
+    window.location.href = mailtoLink;
+  });
+</script>
+
+
+
+
+
+
+
+<!--News letter starts from here-->
+<section class="newsletter">
+  <h2>Subscribe to Our Newsletter</h2>
+  <p>Stay updated with our latest news and promotions.</p>
+  <form id="newsletterForm" onsubmit="submitForm(event)">
+    <input type="email" id="emailInput" placeholder="Enter your email address" required>
+    <button type="submit" id="submitButton">Subscribe</button>
+    <button type="button" id="submittedButton" class="hide">Submitted</button>
+    <button type="button" id="homeButton" class="hide" onclick="window.location.href='index.html'">Home</button>
+  </form>
+  <!-- Copyright Text -->
+  <p class="copyright">Noise Pollution Monitoring and Mitigation | &copy;2024</p>
+</section>
+</body>
+</html>

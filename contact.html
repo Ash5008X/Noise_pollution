@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOME</title>
+<!-- Link to Poppins font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href= CSS\headernavnewsletter.css>
+
+  <script src=Javascripts\newsletter.js></script>
+  <script src=Javascripts\registerbutton.js></script>
+
+  <link rel="stylesheet" href="CSS\contact.css">
+
+</head>
+<body>
+  <header>
+    <!-- Left side: Logo -->
+    <div class="logo">
+        <!-- Replace 'logo.png' with your actual logo image -->
+        <img src=PHOTOS\logo.png alt="Logo">
+    </div>
+
+    <!-- Center: Website Name -->
+    <div class="website-name">
+      NOISE POLLUTION MONITORING AND MITIGATION
+    </div>
+
+    <!-- Right side: Register Button -->
+    <button class="register-button" onclick="showDialog()">Get in touch</button>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="product.html">Products</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About Us</a>
+</nav>
+<h1>CONTACT US</h1>
+<div class="contact-form">
+  <form id="contact-form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+</div>
+<br><br><br><br>
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    var mailtoLink = 'mailto:workforsnehil@email.com?subject=Contact%20Us&body=Name:%20' + name + '%0AEmail:%20' + email + '%0AMessage:%20' + message;
+    window.location.href = mailtoLink;
+  });
+</script>
+
+<section class="newsletter">
+  <h2>Subscribe to Our Newsletter</h2>
+  <p>Stay updated with our latest news and promotions.</p>
+  <form id="newsletterForm" onsubmit="submitForm(event)">
+    <input type="email" id="emailInput" placeholder="Enter your email address" required>
+    <button type="submit" id="submitButton">Subscribe</button>
+    <button type="button" id="submittedButton" class="hide">Submitted</button>
+    <button type="button" id="homeButton" class="hide" onclick="window.location.href='index.html'">Home</button>
+  </form>
+  <!-- Copyright Text -->
+  <p class="copyright">Noise Pollution Monitoring and Mitigation | &copy;2024</p>
+</section>
+</body>
+</html>
